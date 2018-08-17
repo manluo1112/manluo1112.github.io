@@ -1,1 +1,47 @@
-MMMMMM
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/4.0.4/echarts.min.js"></script>
+  <script src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script>
+  <script src="http://api.map.baidu.com/api?v=2.0&ak=IUw2eVPVkpj9yYqzY3Oow6rGggeLKufu"></script>
+  <script src="http://api.map.baidu.com/library/DistanceTool/1.2/src/DistanceTool_min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.5.2/randomColor.min.js"></script>
+  <script src="coord.js"></script>
+  <style type="text/css">
+    body {
+      margin: 0;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    .anchorBL {
+      display: none;
+    }
+
+    #controls {
+      position: fixed;
+      right: 16px;
+      bottom: 16px;
+    }
+
+    #controls>input {
+      width: 100px;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="main" style="width:100%; height:100%;"></div>
+
+  <div id="controls">
+    <input id="seq" type="text" />
+    <button id="pos-btn">定位</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
